@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GST Expert Office</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <meta name="description" content="GST services in India - Registration, Returns, Business Setup">
+  <meta name="keywords" content="GST, Tax Consultant, Return Filing, GSTIN, Business Setup">
+  <script>
+    // AOS Initialization
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo" data-aos="fade-right">Expert<span>Solution</span></div>
+      <ul class="nav-links" data-aos="fade-left">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text" data-aos="fade-up">
+      <h1>Expert Solution</h1>
+      <p>Fast, Reliable, and Compliant Tax Services for Your Business</p>
+      <a href="#contact" class="btn-primary" data-aos="zoom-in" data-aos-delay="300">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="services" class="section services" data-aos="fade-up">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-file-signature"></i>
+        <h3>GST Registration</h3>
+        <p>Seamless new GST registration and business compliance support.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h3>GST Return Filing</h3>
+        <p>Monthly/Quarterly return filing with 100% accuracy.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-user-tie"></i>
+        <h3>Tax Consultancy</h3>
+        <p>Expert advice to reduce liabilities & avoid penalties.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-briefcase"></i>
+        <h3>Business Setup</h3>
+        <p>We help you establish a legal and tax-compliant business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about" data-aos="fade-right">
+    <h2 class="section-title">About Us</h2>
+    <p class="about-text">
+      We are a team of qualified tax professionals with over 10+ years of experience in GST & business consultancy. 
+      Our mission is to make taxation stress-free for entrepreneurs and businesses.
+    </p>
+  </section>
+
+  <section id="faq" class="section faq" data-aos="fade-left">
+    <h2 class="section-title">FAQs</h2>
+    <details data-aos="fade-up" data-aos-delay="100"><summary>What is GST?</summary><p>GST is a unified indirect tax for the whole country, replacing multiple taxes.</p></details>
+    <details data-aos="fade-up" data-aos-delay="200"><summary>Who needs to register under GST?</summary><p>Businesses with turnover exceeding ₹20 lakh (₹10 lakh for NE states) must register.</p></details>
+  </section>
+
+  <section class="section testimonials" data-aos="zoom-in">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="testimonial-box">
+      <p>"Very professional GST filing services. Timely reminders and accurate reports!"</p>
+      <h4>- Rohit Mehra, Business Owner</h4>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact" data-aos="fade-up">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contactForm" class="contact-form" data-aos="fade-up" data-aos-delay="200">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone" />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <div class="map-container" data-aos="fade-up" data-aos-delay="300">
+      <h3>Visit Our Office</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.173197469457!2d77.229509!3d28.612864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2b42203d6a3%3A0x1a4e577a9f164b7b!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1620118548999!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" data-aos="zoom-in-up"><i class="fab fa-whatsapp"></i></a>
+
+  <footer data-aos="fade-in">
+    <p>&copy; 2025 GSTExpert. Crafted with ❤️ in India.</p>
+  </footer>
+</body>
+</html>
