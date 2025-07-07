@@ -319,3 +319,21 @@ footer {
   font-size: 1.1rem;
   color: #333;
 }
+.service-card i {
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .service-card {
+    padding: 20px 15px;
+  }
+}
+.service-card:hover i {
+  color: #005dc1;
+}
+.service-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
