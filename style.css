@@ -289,3 +289,33 @@ footer {
   color: #555;
   font-weight: 500;
 }
+.gst-calc-box {
+  background: #fff;
+  padding: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.gst-calc-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.gst-calc-box input,
+.gst-calc-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.gst-result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
