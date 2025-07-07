@@ -1,3 +1,4 @@
+<!-- Start of full HTML file with GST Calculator added -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +14,8 @@
   <meta name="description" content="GST services in India - Registration, Returns, Business Setup">
   <meta name="keywords" content="GST, Tax Consultant, Return Filing, GSTIN, Business Setup">
   <script>
-    // AOS Initialization
     document.addEventListener("DOMContentLoaded", function () {
-      AOS.init({
-        duration: 1000,
-        once: true
-      });
+      AOS.init({ duration: 1000, once: true });
     });
   </script>
 </head>
@@ -30,7 +27,9 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#founders">Founders</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="#gst-calculator">GST Calculator</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -78,17 +77,16 @@
     </p>
   </section>
 
-  <!-- Founder Details Section -->
   <section id="founders" class="section founders" data-aos="fade-up">
     <h2 class="section-title">Meet Our Founders</h2>
     <div class="founders-grid">
       <div class="founder-card">
-        <img src="PriyankaSharma.png" alt="Priyanka Sharma" />
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priyanka Sharma" />
         <h3>Priyanka Sharma</h3>
         <p>Co-Founder & CEO</p>
       </div>
       <div class="founder-card">
-        <img src="NishantSharma.png" alt="Nishant Sharma" />
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Nishant Sharma" />
         <h3>Nishant Sharma</h3>
         <p>Co-Founder & COO</p>
       </div>
@@ -99,6 +97,33 @@
     <h2 class="section-title">FAQs</h2>
     <details data-aos="fade-up" data-aos-delay="100"><summary>What is GST?</summary><p>GST is a unified indirect tax for the whole country, replacing multiple taxes.</p></details>
     <details data-aos="fade-up" data-aos-delay="200"><summary>Who needs to register under GST?</summary><p>Businesses with turnover exceeding ₹20 lakh (₹10 lakh for NE states) must register.</p></details>
+  </section>
+
+  <!-- GST Calculator Section -->
+  <section id="gst-calculator" class="section gst-calc" data-aos="fade-up">
+    <h2 class="section-title">GST Calculator</h2>
+    <div class="gst-calc-box">
+      <form id="calculatorForm">
+        <label for="amount">Enter Amount (₹):</label>
+        <input type="number" id="amount" placeholder="e.g. 1000" required />
+
+        <label for="rate">Select GST Rate:</label>
+        <select id="rate" required>
+          <option value="">-- Choose GST Rate --</option>
+          <option value="5">5%</option>
+          <option value="12">12%</option>
+          <option value="18">18%</option>
+          <option value="28">28%</option>
+        </select>
+
+        <button type="submit" class="btn-primary">Calculate</button>
+      </form>
+
+      <div id="result" class="gst-result" style="display:none;">
+        <p><strong>GST Amount:</strong> ₹<span id="gstAmount">0</span></p>
+        <p><strong>Total Amount (incl. GST):</strong> ₹<span id="totalAmount">0</span></p>
+      </div>
+    </div>
   </section>
 
   <section class="section testimonials" data-aos="zoom-in">
