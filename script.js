@@ -41,3 +41,24 @@ function calculateGST() {
   document.getElementById("gstResult").innerText =
     `GST: ₹${gst.toFixed(2)}, Total: ₹${total.toFixed(2)}`;
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("calculatorForm");
+  const gstAmountEl = document.getElementById("gstAmount");
+  const totalAmountEl = document.getElementById("totalAmount");
+  const resultEl = document.getElementById("result");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const amount = parseFloat(document.getElementById("amount").value);
+    const rate = parseFloat(document.getElementById("rate").value);
+
+    if (isNaN(amount) || isNaN(rate)) return;
+
+    const gst = (amount * rate) / 100;
+    const total = amount + gst;
+
+    gstAmountEl.textContent = gst.toFixed(2);
+    totalAmountEl.textContent = total.toFixed(2);
+    resultEl.style.display = "block";
+  });
+});
