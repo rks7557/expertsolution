@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container for forms */
+.container {
+  background: white;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #0077b6;
+}
+
+/* Inputs and buttons */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 14px 15px;
+  margin: 10px 0 20px 0;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 6px #0077b6aa;
+}
+
+button {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+/* Link styling */
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+p a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #023e8a;
+}
+
+/* Flash messages (errors etc.) */
+ul {
+  background: #ffe5e5;
+  border-left: 4px solid #e63946;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  color: #b00020;
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* For homepage (home.html) */
+
+body.homepage {
+  background: #e0f7fa;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Header nav */
+header nav {
+  background: #0077b6;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: #90e0ef;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #90e0ef;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #90e0ef, #0077b6);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  background-color: #023e8a;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0077b6;
+}
+
+/* Services grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.service-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #023e8a;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 119, 182, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  background-color: #0077b6;
+  color: white;
+  font-weight: 500;
+  margin-top: 50px;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
